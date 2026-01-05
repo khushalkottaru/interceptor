@@ -1,7 +1,7 @@
 # Fox 2 Interceptor Simulation
 
 ## Abstract
-This project is a python-based high fidelity model for simulating infraed guided missile engagments. In 3-DOF, the project moves beyond basic logic to implement professional-grade gudiance and numerical integration standards.
+This project is a python-based high fidelity model for simulating infrared guided missile engagments. In 3-DOF, the project moves beyond basic logic to implement professional-grade guidance and numerical integration standards.
 
 ## Technical Architecture
 The simulation utilizes a **4th-Order Runge-Kutta (RK4)** integrator to propagate the entity state vector $S = [x, y, z, v_x, v_y, v_z, m]$.
@@ -11,7 +11,7 @@ Unlike Euler integration, which has a local truncation error of $O(\Delta t^2)$,
 $\rightarrow y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$
 
 ## Guidance & Navigation
-The interceptor utilizes **Gravity-Compensated Proportional Navigation (PN)** analgous to an operational sidewinder missile to prevent "sagging" due to underestimating gravity. The commanded acceleration $a_c$ is derived from the Line-of-Sight (LOS) rate $\dot{\lambda}$ and closing velocity $V_c$.
+The interceptor utilizes **Gravity-Compensated Proportional Navigation (PN)** analogous to an operational sidewinder missile to prevent "sagging" due to underestimating gravity. The commanded acceleration $a_c$ is derived from the Line-of-Sight (LOS) rate $\dot{\lambda}$ and closing velocity $V_c$.
 
 $\rightarrow a_c = N \cdot V_c \cdot \dot{\lambda}$
 
