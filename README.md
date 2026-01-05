@@ -33,6 +33,6 @@ This ensures the $F=ma$ calculations account for the significantly increased man
  
    ## Monte Carlo Probability Analysis & $P_k$
   The effectiveness of each engagement is evaluated via Monte Carlo iteration.  by injecting Gaussian noise into initial launch conditions and target state estimates, the system generates a statistical **probability of kill ($P_k$)**.
-  $ \rightarrow P_k = \frac{\sum \text{Intercepts}}{\sum \text{Total Runs}}$
+  $\rightarrow P_k = \frac{\sum \text{Intercepts}}{\sum \text{Total Runs}}$
 
   Technical Note: This is a **3-DOF** point-mass simulation. Future iterations may focus on 6-DOF by implementing rotation mechanics.
